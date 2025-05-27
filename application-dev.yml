@@ -1,3 +1,12 @@
+spring:
+  application:
+    name: rating
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:8087
+
 eureka:
   client:
     service-url:
@@ -5,16 +14,8 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 
-spring:
-  boot:
-    admin:
-      client:
-        url: http://localhost:8087
-
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-
-
